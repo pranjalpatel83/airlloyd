@@ -1,0 +1,225 @@
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1A5F7A;
+            --secondary-color: #159895;
+            --accent-color: #57C5B6;
+            --background-color: #F9F9F9;
+            --text-color: #333333;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+        }
+        .booking-container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .booking-steps {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+        }
+        .step-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 0.75rem;
+            font-size: 1.2rem;
+        }
+        .booking-content {
+            padding: 3rem;
+        }
+        .form-control, .form-select {
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.2rem rgba(21, 152, 149, 0.25);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            border-radius: 8px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #134d63;
+            border-color: #134d63;
+        }
+        .passenger-card {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+        }
+        .passenger-card:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .passenger-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+        .remove-passenger {
+            color: var(--primary-color);
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        .remove-passenger:hover {
+            color: #134d63;
+        }
+        .section-icon {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-right: 1rem;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="booking-container">
+        <div class="booking-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <span>Trip Details</span>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <span>Passengers</span>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <span>Payment</span>
+            </div>
+        </div>
+        <div class="booking-content">
+            <form method="post">
+                {% csrf_token %}
+                <div class="section-title">
+                    <i class="fas fa-map-marked-alt section-icon"></i>
+                    <h3>Trip Details</h3>
+                </div>
+                {% crispy booking_form %}
+
+                <div class="section-title mt-5">
+                    <i class="fas fa-users section-icon"></i>
+                    <h3>Passengers</h3>
+                </div>
+                <div id="passenger_formset">
+                    {% for form in passenger_formset %}
+                        <div class="passenger-card" id="form-{{ form.prefix }}">
+                            <div class="passenger-header">
+                                <h5><i class="fas fa-user-circle me-2"></i>Passenger {{ forloop.counter }}</h5>
+                                <span class="remove-passenger" onclick="removePassenger(this, '{{ form.prefix }}')">
+                                    <i class="fas fa-times-circle"></i>
+                                </span>
+                            </div>
+                            {% crispy form %}
+                            {% if form.DELETE %}
+                                <div class="d-none">
+                                    {{ form.DELETE }}
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <button type="button" class="btn btn-secondary mb-4" id="add-passenger">
+                    <i class="fas fa-user-plus me-2"></i>Add Passenger
+                </button>
+
+                <div class="d-grid mt-5">
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        <i class="fas fa-credit-card me-2"></i>Proceed to Payment
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var formIdx = {{ passenger_formset.total_form_count }};
+        document.getElementById('add-passenger').onclick = function() {
+            if (formIdx < 3) {
+                var formHtml = `
+                    <div class="passenger-card" id="form-${formIdx}">
+                        <div class="passenger-header">
+                            <h5><i class="fas fa-user-circle me-2"></i>Passenger ${formIdx + 1}</h5>
+                            <span class="remove-passenger" onclick="removePassenger(this, '${formIdx}')">
+                                <i class="fas fa-times-circle"></i>
+                            </span>
+                        </div>
+                        ${document.getElementById('empty-form').innerHTML.replace(/__prefix__/g, formIdx)}
+                    </div>
+                `;
+                document.getElementById('passenger_formset').insertAdjacentHTML('beforeend', formHtml);
+                formIdx++;
+            } else {
+                alert('Maximum of 3 passengers allowed.');
+            }
+        }
+
+        function removePassenger(button, prefix) {
+            document.getElementById(`form-${prefix}`).style.display = 'none';
+            document.querySelector(`#form-${prefix} input[name$='-DELETE']`).checked = true;
+            formIdx--;
+        }
+    </script>
+
+    <div id="empty-form" style="display: none;">
+        {% crispy passenger_formset.empty_form %}
+        {% if passenger_formset.empty_form.DELETE %}
+            <div class="d-none">
+                {{ passenger_formset.empty_form.DELETE }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

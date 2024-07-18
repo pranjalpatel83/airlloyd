@@ -1,0 +1,14 @@
+Your Voucher for {{ voucher.product_name }}
+
+Dear Customer,
+
+Thank you for your purchase. Here are the details of your voucher:
+
+Voucher Code: {{ voucher.code }}
+Product: {{ voucher.product_name }}
+Quantity: {{ voucher.quantity }}
+Total Amount: {{ voucher.total_amount }} {{ voucher.currency }}
+
+To redeem your voucher, please use the code above.
+
+Thank you for your business!

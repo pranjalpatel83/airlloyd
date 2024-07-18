@@ -1,0 +1,454 @@
+INFO 2024-07-10 14:28:11,174 autoreload 5752 140704401362880 Watching for file changes with StatReloader
+DEBUG 2024-07-10 14:29:05,880 views 5752 123145605787648 Session: {
+  "after_expiration": null,
+  "allow_promotion_codes": null,
+  "amount_subtotal": 3000,
+  "amount_total": 3000,
+  "automatic_tax": {
+    "enabled": false,
+    "liability": null,
+    "status": null
+  },
+  "billing_address_collection": null,
+  "cancel_url": "https://httpbin.org/post",
+  "client_reference_id": null,
+  "client_secret": null,
+  "consent": null,
+  "consent_collection": null,
+  "created": 1720621700,
+  "currency": "usd",
+  "currency_conversion": null,
+  "custom_fields": [],
+  "custom_text": {
+    "after_submit": null,
+    "shipping_address": null,
+    "submit": null,
+    "terms_of_service_acceptance": null
+  },
+  "customer": null,
+  "customer_creation": "if_required",
+  "customer_details": {
+    "address": {
+      "city": "South San Francisco",
+      "country": "US",
+      "line1": "354 Oyster Point Blvd",
+      "line2": null,
+      "postal_code": "94080",
+      "state": "CA"
+    },
+    "email": "stripe@example.com",
+    "name": "Jenny Rosen",
+    "phone": null,
+    "tax_exempt": "none",
+    "tax_ids": []
+  },
+  "customer_email": null,
+  "expires_at": 1720708100,
+  "id": "cs_test_a1Nxu7vGz4mMlea8ybm9jmyUdFHCMimtcM8hJagdJAe5fY0rJmVIDUp0uO",
+  "invoice": null,
+  "invoice_creation": {
+    "enabled": false,
+    "invoice_data": {
+      "account_tax_ids": null,
+      "custom_fields": null,
+      "description": null,
+      "footer": null,
+      "issuer": null,
+      "metadata": {},
+      "rendering_options": null
+    }
+  },
+  "livemode": false,
+  "locale": null,
+  "metadata": {},
+  "mode": "payment",
+  "object": "checkout.session",
+  "payment_intent": "pi_3Pb1VKLn7w0HlqcK0UhK03a2",
+  "payment_link": null,
+  "payment_method_collection": "if_required",
+  "payment_method_configuration_details": {
+    "id": "pmc_1P3bARLn7w0HlqcKDorfhOTo",
+    "parent": null
+  },
+  "payment_method_options": {
+    "card": {
+      "request_three_d_secure": "automatic"
+    }
+  },
+  "payment_method_types": [
+    "card"
+  ],
+  "payment_status": "paid",
+  "phone_number_collection": {
+    "enabled": false
+  },
+  "recovered_from": null,
+  "saved_payment_method_options": null,
+  "setup_intent": null,
+  "shipping_address_collection": null,
+  "shipping_cost": null,
+  "shipping_details": null,
+  "shipping_options": [],
+  "status": "complete",
+  "submit_type": null,
+  "subscription": null,
+  "success_url": "https://httpbin.org/post",
+  "total_details": {
+    "amount_discount": 0,
+    "amount_shipping": 0,
+    "amount_tax": 0
+  },
+  "ui_mode": "hosted",
+  "url": null
+}
+INFO 2024-07-10 14:29:05,889 views 5752 123145605787648 Sending voucher VCH-10A691B9 to None
+INFO 2024-07-10 14:29:05,890 views 5752 123145605787648 Voucher VCH-10A691B9 sent to None
+INFO 2024-07-10 14:32:03,757 autoreload 5752 140704401362880 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py changed, reloading.
+INFO 2024-07-10 14:32:05,603 autoreload 5841 140704401362880 Watching for file changes with StatReloader
+INFO 2024-07-10 14:33:20,965 autoreload 5841 140704401362880 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py changed, reloading.
+INFO 2024-07-10 14:33:22,553 autoreload 5874 140704401362880 Watching for file changes with StatReloader
+INFO 2024-07-10 14:33:27,036 views 5874 123145562206208 Processing successful payment for session: cs_test_a1c30G1i60XlDY3ngCH7m2nxYd4ZiYh9UWMuMwoLmYa9DVizGCNajp1WiQ
+INFO 2024-07-10 15:09:03,499 views 5874 123145578995712 Processing successful payment for session: cs_test_a1ODzHzmtDMVlxmUX9DGA6hlkZ37O5sxKzJYezYxrxOHUAigJ0JeK4rCAK
+ERROR 2024-07-10 15:09:26,011 views 5874 123145562206208 Unable to retrieve customer email for session: cs_test_a1c30G1i60XlDY3ngCH7m2nxYd4ZiYh9UWMuMwoLmYa9DVizGCNajp1WiQ
+ERROR 2024-07-10 15:09:26,011 views 5874 123145578995712 Unable to retrieve customer email for session: cs_test_a1ODzHzmtDMVlxmUX9DGA6hlkZ37O5sxKzJYezYxrxOHUAigJ0JeK4rCAK
+INFO 2024-07-10 21:41:23,555 autoreload 4243 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 21:47:20,591 views 4243 123145489797120 Processing successful payment for session: cs_test_a1ljYI4twxD0gmAg9N7hVsL7vNInywGpK6qkhd5Qm8vHD3dUvwKWo3eJNQ
+INFO 2024-07-10 21:47:20,639 _util 4243 123145489797120 message='Request to Stripe api' method=get url=https://api.stripe.com/v1/checkout/sessions/cs_test_a1ljYI4twxD0gmAg9N7hVsL7vNInywGpK6qkhd5Qm8vHD3dUvwKWo3eJNQ/line_items?limit=1
+DEBUG 2024-07-10 21:47:20,639 _util 4243 123145489797120 api_version=2024-06-20 message='Post details' post_data=limit=1
+DEBUG 2024-07-10 21:47:20,657 connectionpool 4243 123145489797120 Starting new HTTPS connection (1): api.stripe.com:443
+DEBUG 2024-07-10 21:47:21,075 connectionpool 4243 123145489797120 https://api.stripe.com:443 "GET /v1/checkout/sessions/cs_test_a1ljYI4twxD0gmAg9N7hVsL7vNInywGpK6qkhd5Qm8vHD3dUvwKWo3eJNQ/line_items?limit=1 HTTP/11" 200 1096
+INFO 2024-07-10 21:47:21,076 _util 4243 123145489797120 message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions/cs_test_a1ljYI4twxD0gmAg9N7hVsL7vNInywGpK6qkhd5Qm8vHD3dUvwKWo3eJNQ/line_items?limit=1 response_code=200
+DEBUG 2024-07-10 21:47:21,076 _util 4243 123145489797120 body='{\n  "object": "list",\n  "data": [\n    {\n      "id": "li_1Pb8LhLn7w0HlqcKSLM0XqzQ",\n      "object": "item",\n      "amount_discount": 0,\n      "amount_subtotal": 59500,\n      "amount_tax": 0,\n      "amount_total": 59500,\n      "currency": "eur",\n      "description": "Hubschrauber-Rundflug Köln Bonn",\n      "price": {\n        "id": "price_1PayfuLn7w0HlqcKLscvarJ5",\n        "object": "price",\n        "active": true,\n        "billing_scheme": "per_unit",\n        "created": 1720610826,\n        "currency": "eur",\n        "custom_unit_amount": null,\n        "livemode": false,\n        "lookup_key": null,\n        "metadata": {},\n        "nickname": null,\n        "product": "prod_QRsQWSACeEarRk",\n        "recurring": null,\n        "tax_behavior": "unspecified",\n        "tiers_mode": null,\n        "transform_quantity": null,\n        "type": "one_time",\n        "unit_amount": 59500,\n        "unit_amount_decimal": "59500"\n      },\n      "quantity": 1\n    }\n  ],\n  "has_more": false,\n  "url": "/v1/checkout/sessions/cs_test_a1ljYI4twxD0gmAg9N7hVsL7vNInywGpK6qkhd5Qm8vHD3dUvwKWo3eJNQ/line_items"\n}' message='API response body'
+DEBUG 2024-07-10 21:47:21,076 _util 4243 123145489797120 link=https://dashboard.stripe.com/test/logs/req_1oGzdz7Phn3t1H message='Dashboard link for request'
+INFO 2024-07-10 21:47:21,105 views 4243 123145489797120 Sending voucher VCH-AAB0CF4F - Hubschrauber-Rundflug Köln Bonn (1) to vinaytilwani+1@gmail.com
+INFO 2024-07-10 21:47:21,106 views 4243 123145489797120 Voucher VCH-AAB0CF4F sent to vinaytilwani+1@gmail.com
+INFO 2024-07-10 21:57:24,447 autoreload 4243 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/admin.py changed, reloading.
+INFO 2024-07-10 21:57:26,030 autoreload 4903 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 21:57:35,124 autoreload 4903 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/models.py changed, reloading.
+INFO 2024-07-10 21:57:36,128 autoreload 4912 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 21:58:24,262 autoreload 4912 140704465383360 /Users/vinay/PycharmProjects/airLloyd/airLloyd/settings.py changed, reloading.
+INFO 2024-07-10 21:58:25,364 autoreload 4933 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 22:00:47,474 autoreload 4933 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py changed, reloading.
+INFO 2024-07-10 22:00:49,536 autoreload 5046 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 22:01:42,079 views 5046 123145543286784 Processing successful payment for session: cs_test_a1V5yYLphWzVLOlvKnJlcpgXoCHk5WVLmS8HVEVX17xgoaaQXspnkal5bb
+INFO 2024-07-10 22:01:42,118 _util 5046 123145543286784 message='Request to Stripe api' method=get url=https://api.stripe.com/v1/checkout/sessions/cs_test_a1V5yYLphWzVLOlvKnJlcpgXoCHk5WVLmS8HVEVX17xgoaaQXspnkal5bb/line_items?limit=1
+DEBUG 2024-07-10 22:01:42,119 _util 5046 123145543286784 api_version=2024-06-20 message='Post details' post_data=limit=1
+DEBUG 2024-07-10 22:01:42,132 connectionpool 5046 123145543286784 Starting new HTTPS connection (1): api.stripe.com:443
+DEBUG 2024-07-10 22:01:42,538 connectionpool 5046 123145543286784 https://api.stripe.com:443 "GET /v1/checkout/sessions/cs_test_a1V5yYLphWzVLOlvKnJlcpgXoCHk5WVLmS8HVEVX17xgoaaQXspnkal5bb/line_items?limit=1 HTTP/11" 200 1096
+INFO 2024-07-10 22:01:42,539 _util 5046 123145543286784 message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions/cs_test_a1V5yYLphWzVLOlvKnJlcpgXoCHk5WVLmS8HVEVX17xgoaaQXspnkal5bb/line_items?limit=1 response_code=200
+DEBUG 2024-07-10 22:01:42,539 _util 5046 123145543286784 body='{\n  "object": "list",\n  "data": [\n    {\n      "id": "li_1Pb8ZdLn7w0HlqcKPWazGKTC",\n      "object": "item",\n      "amount_discount": 0,\n      "amount_subtotal": 59500,\n      "amount_tax": 0,\n      "amount_total": 59500,\n      "currency": "eur",\n      "description": "Hubschrauber-Rundflug Köln Bonn",\n      "price": {\n        "id": "price_1PayfuLn7w0HlqcKLscvarJ5",\n        "object": "price",\n        "active": true,\n        "billing_scheme": "per_unit",\n        "created": 1720610826,\n        "currency": "eur",\n        "custom_unit_amount": null,\n        "livemode": false,\n        "lookup_key": null,\n        "metadata": {},\n        "nickname": null,\n        "product": "prod_QRsQWSACeEarRk",\n        "recurring": null,\n        "tax_behavior": "unspecified",\n        "tiers_mode": null,\n        "transform_quantity": null,\n        "type": "one_time",\n        "unit_amount": 59500,\n        "unit_amount_decimal": "59500"\n      },\n      "quantity": 1\n    }\n  ],\n  "has_more": false,\n  "url": "/v1/checkout/sessions/cs_test_a1V5yYLphWzVLOlvKnJlcpgXoCHk5WVLmS8HVEVX17xgoaaQXspnkal5bb/line_items"\n}' message='API response body'
+DEBUG 2024-07-10 22:01:42,539 _util 5046 123145543286784 link=https://dashboard.stripe.com/test/logs/req_JenfCaFZgNatcg message='Dashboard link for request'
+ERROR 2024-07-10 22:01:42,568 views 5046 123145543286784 Error in voucher generation or sending: emails/voucher_email.txt
+ERROR 2024-07-10 22:01:42,568 views 5046 123145543286784 Error handling successful payment: emails/voucher_email.txt
+ERROR 2024-07-10 22:01:42,569 log 5046 123145543286784 Internal Server Error: /stripe-webhook/
+INFO 2024-07-10 22:03:41,783 autoreload 5046 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py changed, reloading.
+INFO 2024-07-10 22:03:44,084 autoreload 5141 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-10 22:04:42,437 views 5141 123145456324608 Processing successful payment for session: cs_test_a1riDoYHnn3dhR1nV3OzemibJusxTRJxhaVLJ59z85dwLPGJtU3X7dmAcA
+INFO 2024-07-10 22:04:42,516 _util 5141 123145456324608 message='Request to Stripe api' method=get url=https://api.stripe.com/v1/checkout/sessions/cs_test_a1riDoYHnn3dhR1nV3OzemibJusxTRJxhaVLJ59z85dwLPGJtU3X7dmAcA/line_items?limit=1
+DEBUG 2024-07-10 22:04:42,517 _util 5141 123145456324608 api_version=2024-06-20 message='Post details' post_data=limit=1
+DEBUG 2024-07-10 22:04:42,538 connectionpool 5141 123145456324608 Starting new HTTPS connection (1): api.stripe.com:443
+DEBUG 2024-07-10 22:04:42,924 connectionpool 5141 123145456324608 https://api.stripe.com:443 "GET /v1/checkout/sessions/cs_test_a1riDoYHnn3dhR1nV3OzemibJusxTRJxhaVLJ59z85dwLPGJtU3X7dmAcA/line_items?limit=1 HTTP/11" 200 1096
+INFO 2024-07-10 22:04:42,925 _util 5141 123145456324608 message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions/cs_test_a1riDoYHnn3dhR1nV3OzemibJusxTRJxhaVLJ59z85dwLPGJtU3X7dmAcA/line_items?limit=1 response_code=200
+DEBUG 2024-07-10 22:04:42,925 _util 5141 123145456324608 body='{\n  "object": "list",\n  "data": [\n    {\n      "id": "li_1Pb8cfLn7w0HlqcKXltp1PeZ",\n      "object": "item",\n      "amount_discount": 0,\n      "amount_subtotal": 59500,\n      "amount_tax": 0,\n      "amount_total": 59500,\n      "currency": "eur",\n      "description": "Hubschrauber-Rundflug Köln Bonn",\n      "price": {\n        "id": "price_1PayfuLn7w0HlqcKLscvarJ5",\n        "object": "price",\n        "active": true,\n        "billing_scheme": "per_unit",\n        "created": 1720610826,\n        "currency": "eur",\n        "custom_unit_amount": null,\n        "livemode": false,\n        "lookup_key": null,\n        "metadata": {},\n        "nickname": null,\n        "product": "prod_QRsQWSACeEarRk",\n        "recurring": null,\n        "tax_behavior": "unspecified",\n        "tiers_mode": null,\n        "transform_quantity": null,\n        "type": "one_time",\n        "unit_amount": 59500,\n        "unit_amount_decimal": "59500"\n      },\n      "quantity": 1\n    }\n  ],\n  "has_more": false,\n  "url": "/v1/checkout/sessions/cs_test_a1riDoYHnn3dhR1nV3OzemibJusxTRJxhaVLJ59z85dwLPGJtU3X7dmAcA/line_items"\n}' message='API response body'
+DEBUG 2024-07-10 22:04:42,926 _util 5141 123145456324608 link=https://dashboard.stripe.com/test/logs/req_DUyzMB8NjJVGsA message='Dashboard link for request'
+INFO 2024-07-10 22:04:42,966 views 5141 123145456324608 Voucher VCH-B5DED250 sent to vinaytilwani+3@gmail.com
+WARNING 2024-07-10 22:07:58,647 log 5141 123145540808704 Not Found: /favicon.ico
+INFO 2024-07-11 08:22:44,408 views 5141 123145473114112 Processing successful payment for session: cs_test_a1NCfyWNXTFKF386fNgPq6urT1MQIgcYPxvyXd9VR7lWcEha7ik5kx7Qd8
+INFO 2024-07-11 08:22:44,412 _util 5141 123145473114112 message='Request to Stripe api' method=get url=https://api.stripe.com/v1/checkout/sessions/cs_test_a1NCfyWNXTFKF386fNgPq6urT1MQIgcYPxvyXd9VR7lWcEha7ik5kx7Qd8/line_items?limit=1
+DEBUG 2024-07-11 08:22:44,413 _util 5141 123145473114112 api_version=2024-06-20 message='Post details' post_data=limit=1
+DEBUG 2024-07-11 08:22:44,421 connectionpool 5141 123145473114112 Starting new HTTPS connection (1): api.stripe.com:443
+DEBUG 2024-07-11 08:22:44,866 connectionpool 5141 123145473114112 https://api.stripe.com:443 "GET /v1/checkout/sessions/cs_test_a1NCfyWNXTFKF386fNgPq6urT1MQIgcYPxvyXd9VR7lWcEha7ik5kx7Qd8/line_items?limit=1 HTTP/11" 200 1271
+INFO 2024-07-11 08:22:44,868 _util 5141 123145473114112 message='Stripe API response' path=https://api.stripe.com/v1/checkout/sessions/cs_test_a1NCfyWNXTFKF386fNgPq6urT1MQIgcYPxvyXd9VR7lWcEha7ik5kx7Qd8/line_items?limit=1 response_code=200
+DEBUG 2024-07-11 08:22:44,868 _util 5141 123145473114112 body='{\n  "object": "list",\n  "data": [\n    {\n      "id": "li_1PbIGeLn7w0HlqcKF8g6J28B",\n      "object": "item",\n      "amount_discount": 0,\n      "amount_subtotal": 9900,\n      "amount_tax": 0,\n      "amount_total": 9900,\n      "currency": "eur",\n      "description": "Essential",\n      "price": {\n        "id": "price_1PA5pHLn7w0HlqcKW2eV6Qx0",\n        "object": "price",\n        "active": true,\n        "billing_scheme": "per_unit",\n        "created": 1714203459,\n        "currency": "eur",\n        "custom_unit_amount": null,\n        "livemode": false,\n        "lookup_key": null,\n        "metadata": {},\n        "nickname": null,\n        "product": "prod_PrzTUQEtV5XmS9",\n        "recurring": {\n          "aggregate_usage": null,\n          "interval": "month",\n          "interval_count": 1,\n          "meter": null,\n          "trial_period_days": null,\n          "usage_type": "licensed"\n        },\n        "tax_behavior": "unspecified",\n        "tiers_mode": null,\n        "transform_quantity": null,\n        "type": "recurring",\n        "unit_amount": 9900,\n        "unit_amount_decimal": "9900"\n      },\n      "quantity": 1\n    }\n  ],\n  "has_more": false,\n  "url": "/v1/checkout/sessions/cs_test_a1NCfyWNXTFKF386fNgPq6urT1MQIgcYPxvyXd9VR7lWcEha7ik5kx7Qd8/line_items"\n}' message='API response body'
+DEBUG 2024-07-11 08:22:44,869 _util 5141 123145473114112 link=https://dashboard.stripe.com/test/logs/req_exslE5DLslGGzF message='Dashboard link for request'
+INFO 2024-07-11 08:22:44,896 views 5141 123145473114112 Voucher VCH-DF08C05F sent to kevin.koehler@lumentis-ai.com
+INFO 2024-07-11 22:01:41,019 autoreload 5141 140704465383360 /Users/vinay/PycharmProjects/airLloyd/airLloyd/settings.py changed, reloading.
+INFO 2024-07-11 22:01:43,447 autoreload 13305 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:08:33,163 autoreload 13537 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:10:39,280 autoreload 13565 140704465383360 Watching for file changes with StatReloader
+ERROR 2024-07-11 22:10:50,841 log 13565 123145362034688 Internal Server Error: /booking/
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/templatetags/crispy_forms_tags.py", line 199, in render
+    c = self.get_render(context).flatten()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/templatetags/crispy_forms_tags.py", line 117, in get_render
+    actual_form.form_html = helper.render_layout(
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/helper.py", line 276, in render_layout
+    html = self.layout.render(form, context, template_pack=template_pack)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 142, in render
+    return self.get_rendered_fields(form, context, template_pack, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 105, in get_rendered_fields
+    "".join(render_field(field, form, context, template_pack=template_pack, **kwargs) for field in self.fields)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 105, in <genexpr>
+    "".join(render_field(field, form, context, template_pack=template_pack, **kwargs) for field in self.fields)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/utils.py", line 65, in render_field
+    return field.render(form, context, template_pack=template_pack)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 579, in render
+    fields = self.get_rendered_fields(form, context, template_pack, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 105, in get_rendered_fields
+    "".join(render_field(field, form, context, template_pack=template_pack, **kwargs) for field in self.fields)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/layout.py", line 105, in <genexpr>
+    "".join(render_field(field, form, context, template_pack=template_pack, **kwargs) for field in self.fields)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/utils.py", line 114, in render_field
+    template = default_field_template(template_pack)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/crispy_forms/utils.py", line 26, in default_field_template
+    return get_template("%s/field.html" % template_pack)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py", line 48, in booking_view
+    return render(request, 'booking.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: bootstrap4/field.html
+INFO 2024-07-11 22:21:28,388 autoreload 13785 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:24:06,674 autoreload 13785 140704465383360 /Users/vinay/PycharmProjects/airLloyd/airLloyd/settings.py changed, reloading.
+INFO 2024-07-11 22:24:07,808 autoreload 13903 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:25:42,650 autoreload 13929 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 22:25:50,303 log 13929 123145359646720 Not Found: /favicon.ico
+INFO 2024-07-11 22:39:13,202 autoreload 13929 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/models.py changed, reloading.
+INFO 2024-07-11 22:39:14,620 autoreload 14206 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:39:37,638 autoreload 14206 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/models.py changed, reloading.
+INFO 2024-07-11 22:39:38,554 autoreload 14218 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:40:07,724 autoreload 14218 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/forms.py changed, reloading.
+INFO 2024-07-11 22:40:08,807 autoreload 14229 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:41:00,000 autoreload 14254 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:45:41,845 autoreload 14350 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:46:57,151 autoreload 14350 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/models.py changed, reloading.
+INFO 2024-07-11 22:46:58,331 autoreload 14385 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:48:11,366 autoreload 14385 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/forms.py changed, reloading.
+INFO 2024-07-11 22:48:12,566 autoreload 14405 140704465383360 Watching for file changes with StatReloader
+INFO 2024-07-11 22:48:34,850 autoreload 14405 140704465383360 /Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py changed, reloading.
+INFO 2024-07-11 22:48:35,934 autoreload 14420 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 22:48:49,795 log 14420 123145491976192 Not Found: /favicon.ico
+WARNING 2024-07-11 22:51:49,628 log 14420 123145491976192 Not Found: /favicon.ico
+INFO 2024-07-11 22:52:05,058 autoreload 14489 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 22:52:08,883 log 14489 123145479733248 Not Found: /favicon.ico
+WARNING 2024-07-11 22:52:14,967 log 14489 123145479733248 Not Found: /favicon.ico
+INFO 2024-07-11 22:52:36,593 autoreload 14506 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 22:52:41,515 log 14506 123145425170432 Not Found: /favicon.ico
+WARNING 2024-07-11 22:53:39,937 log 14506 123145425170432 Not Found: /favicon.ico
+WARNING 2024-07-11 22:53:45,193 log 14506 123145425170432 Not Found: /favicon.ico
+INFO 2024-07-11 22:58:40,177 autoreload 14642 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 22:58:46,955 log 14642 123145462005760 Not Found: /favicon.ico
+INFO 2024-07-11 23:00:48,930 autoreload 14686 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 23:00:55,124 log 14686 123145418493952 Not Found: /favicon.ico
+INFO 2024-07-11 23:11:14,673 autoreload 14854 140704465383360 Watching for file changes with StatReloader
+WARNING 2024-07-11 23:11:22,305 log 14854 123145550995456 Not Found: /favicon.ico
+INFO 2024-07-12 13:02:57,137 autoreload 3340 140704411434944 Watching for file changes with StatReloader
+WARNING 2024-07-12 13:03:05,158 log 3340 123145472016384 Not Found: /favicon.ico
+WARNING 2024-07-12 13:14:18,488 log 3340 123145472016384 Not Found: /favicon.ico
+INFO 2024-07-14 13:29:16,314 autoreload 8412 140704411434944 Watching for file changes with StatReloader
+INFO 2024-07-15 21:46:16,684 autoreload 14607 140704411434944 Watching for file changes with StatReloader
+INFO 2024-07-15 21:46:42,435 autoreload 14618 140704411434944 Watching for file changes with StatReloader
+WARNING 2024-07-15 21:47:11,305 log 3340 123145472016384 Not Found: /favicon.ico
+ERROR 2024-07-15 21:51:34,756 log 3340 123145472016384 Internal Server Error: /booking/
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'crispy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py", line 41, in booking_view
+    return render(request, 'booking.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 150: 'crispy'. Did you forget to register or load this tag?
+ERROR 2024-07-15 21:55:50,417 log 3340 123145472016384 Internal Server Error: /booking/
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'crispy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py", line 41, in booking_view
+    return render(request, 'booking.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'crispy'. Did you forget to register or load this tag?
+WARNING 2024-07-15 21:57:30,729 log 3340 123145472016384 Not Found: /favicon.ico
+WARNING 2024-07-15 21:57:34,007 log 3340 123145472016384 Not Found: /favicon.ico
+WARNING 2024-07-15 22:00:19,292 log 3340 123145472016384 Not Found: /favicon.ico
+ERROR 2024-07-15 22:02:29,855 log 3340 123145472016384 Internal Server Error: /booking/
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'crispy'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/voucher_fulfilment/views.py", line 41, in booking_view
+    return render(request, 'booking.html', {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/vinay/PycharmProjects/airLloyd/.venv/lib/python3.12/site-packages/django/template/base.py", line 565, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 147: 'crispy'. Did you forget to register or load this tag?
+WARNING 2024-07-15 22:02:30,827 log 3340 123145472016384 Not Found: /favicon.ico
+WARNING 2024-07-15 22:02:45,733 log 3340 123145472016384 Not Found: /favicon.ico

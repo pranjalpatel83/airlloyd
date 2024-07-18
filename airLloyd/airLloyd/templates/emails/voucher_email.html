@@ -1,0 +1,36 @@
+<!-- templates/emails/voucher_email.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Voucher</title>
+</head>
+<body>
+    <h1>Your Voucher for {{ voucher.product_name }}</h1>
+    <p>Dear Customer,</p>
+    <p>Thank you for your purchase. Here are the details of your voucher:</p>
+    <ul>
+        <li>Voucher Code: <strong>{{ voucher.code }}</strong></li>
+        <li>Product: {{ voucher.product_name }}</li>
+        <li>Quantity: {{ voucher.quantity }}</li>
+        <li>Total Amount: {{ voucher.total_amount }} {{ voucher.currency }}</li>
+    </ul>
+    <p>To redeem your voucher, please use the code above.</p>
+    <p>Thank you for your business!</p>
+</body>
+</html>
+
+<!-- templates/emails/voucher_email.txt -->
+Your Voucher for {{ voucher.product_name }}
+
+Dear Customer,
+
+Thank you for your purchase. Here are the details of your voucher:
+
+Voucher Code: {{ voucher.code }}
+Product: {{ voucher.product_name }}
+Quantity: {{ voucher.quantity }}
+Total Amount: {{ voucher.total_amount }} {{ voucher.currency }}
+
+To redeem your voucher, please use the code above.
+
+Thank you for your business!
